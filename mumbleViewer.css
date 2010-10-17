@@ -1,0 +1,22 @@
+/* if you need to change the size or font options for the Mumble viewer, do it on the next line: */
+#mumbleViewer { height: 300px; overflow-y: scroll; border: 1px solid #c0c0c0; line-height: 16px; position: relative; font-size: 12px; font-family: Tahoma; }
+#mumbleViewer ul img { float: right; padding-left: 7px; }
+#mumbleViewer ul { list-style-type: none; margin: 0; padding: 0 0 0 3px; }
+#mumbleViewer ul ul { margin: 0 0 0 7px; padding: 0 0 0 7px; }
+#mumbleViewer li { padding-top: 3px; }
+.mumbleChannel, .mumbleUser { background: url('mumbleIcons.png') no-repeat; padding-left: 20px; display: block; height: 16px; overflow: hidden; }
+
+a.mumbleChannel, a.mumbleChannel:visited { color: #4c4c4c; text-decoration: none; }
+a.mumbleChannel:hover { text-decoration: underline; }
+
+.mumbleUser { background-position: 0 -16px; }
+.speaking { background-position: 0 -32px; }
+
+/* User status icons */
+.userStatus { display: block; background: url('mumbleIcons.png') no-repeat; width: 16px; height: 16px; float: right; text-indent: -9999px; padding: 0; margin-right: 2px; }
+.authenticated { background-position: 0 -48px; }
+.suppressed { background-position: 0 -128px; }
+.selfDeaf { background-position: 0 -96px; }
+.serverDeaf { background-position: 0 -112px; }
+.selfMute { background-position: 0 -64px; }
+.serverMute { background-position: 0 -80px; }
