@@ -5,6 +5,8 @@
 #mumbleViewer ul ul { margin: 0 0 0 7px; padding: 0 0 0 7px; }
 #mumbleViewer li { padding-top: 3px; }
 .mumbleChannel, .mumbleUser { background: url('mumbleIcons.png') no-repeat; padding-left: 20px; display: block; height: 16px; overflow: hidden; }
+#mumbleLoading { display: none; background-color: #eee; border: 1px solid #bbb; font-weight: bold; width: 70%; top: 40%; left: 15%; padding: 4px 0; opacity: 0.8; position: absolute; z-index: 1000; text-align: center; }
+#mumbleLoading span { background: url("loading.gif") no-repeat; padding-left: 20px; }
 
 a.mumbleChannel, a.mumbleChannel:visited { color: #4c4c4c; text-decoration: none; }
 a.mumbleChannel:hover { text-decoration: underline; }

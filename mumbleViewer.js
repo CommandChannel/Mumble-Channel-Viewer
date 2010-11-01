@@ -26,9 +26,11 @@ $(document).ready(function(){
 
 /* renders the complete Mumble tree, including the channels and users */
 function renderTree() {
+	document.getElementById("mumbleLoading").style.display = "block";
 	jQuery.getJSON(mumbleChannelViewerJsonUri,
 	function (data) {
 		$("#mumbleTree").html(renderChannel(data.root, true));
+		document.getElementById("mumbleLoading").style.display = "none";
 	});
 }
 
