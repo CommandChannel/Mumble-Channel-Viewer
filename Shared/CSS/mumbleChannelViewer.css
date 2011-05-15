@@ -1,0 +1,39 @@
+#mumbleViewer { height: 300px; overflow-y: scroll; border: 1px solid #c0c0c0; padding: 3px; }
+#mumbleViewer a, #mumbleViewer a:visited { color: #000; text-decoration: none; }
+#mumbleViewer a:hover { text-decoration: underline; }
+#mumbleViewer ul { list-style-type: none; margin: 0; padding: 0; }
+#mumbleViewer ul ul { margin: 0 0 0 7px; padding: 0 0 0 7px; }
+#mumbleViewer li { padding-top: 3px; }
+#mumbleViewer a, #mumbleViewer span { background: url('images/mumbleViewerIcons.png') no-repeat left -32px; padding-left: 20px; display: block; height: 16px; overflow: hidden; line-height: 14px; }
+#mumbleViewer span.mumbleChannelViewer-statusIcon { text-indent: -9999px; float: right; }
+#mumbleViewer span.mumbleChannelViewer-user { text-indent: 0; background-position: 0 -16px; float: none; }
+#mumbleViewer span.mumbleChannelViewer-authenticated { background-position: 0 0; }
+#mumbleViewer span.mumbleChannelViewer-suppressed { background-position: 0 -96px; }
+#mumbleViewer span.mumbleChannelViewer-selfDeafened { background-position: 0 -48px; }
+#mumbleViewer span.mumbleChannelViewer-deafened { background-position: 0 -64px; }
+#mumbleViewer span.mumbleChannelViewer-selfMuted { background-position: 0 -80px; }
+#mumbleViewer span.mumbleChannelViewer-muted { background-position: 0 -112px;}
+.mumbleChannelViewer-error { background: #ffc url("images/exclamation.png") no-repeat 4px 5px; color: #000; border: 1px solid #f90; margin: 20px 10px; padding: 5px 5px 5px 25px; }
+
+/* Icon styles */
+#mumbleViewer.mumbleViewerIconsFarCry2 a, #mumbleViewer.mumbleViewerIconsFarCry2 span { background-image: url('images/mumbleViewerIconsFarCry2.png'); }
+#mumbleViewer.mumbleViewerIconsNextGen a, #mumbleViewer.mumbleViewerIconsNextGen span { background-image: url('images/mumbleViewerIconsNextGen.png'); }
+#mumbleViewer.mumbleViewerIconsSCGermania a, #mumbleViewer.mumbleViewerIconsSCGermania span { background-image: url('images/mumbleViewerIconsSCGermania.png'); }
+
+/* Font color styles */
+#mumbleViewer.mumbleViewerColorAqua a, #mumbleViewer.mumbleViewerColorAqua a:visited, #mumbleViewer.mumbleViewerColorAqua span { color: #0ff; }
+#mumbleViewer.mumbleViewerColorBlack a, #mumbleViewer.mumbleViewerColorBlack a:visited, #mumbleViewer.mumbleViewerColorBlack span { color: #000; }
+#mumbleViewer.mumbleViewerColorBlue a, #mumbleViewer.mumbleViewerColorBlue a:visited, #mumbleViewer.mumbleViewerColorBlue span { color: #00f; }
+#mumbleViewer.mumbleViewerColorFuchsia a, #mumbleViewer.mumbleViewerColorFuchsia a:visited, #mumbleViewer.mumbleViewerColorFuchsia span { color: #f0f; }
+#mumbleViewer.mumbleViewerColorGray a, #mumbleViewer.mumbleViewerColorGray a:visited, #mumbleViewer.mumbleViewerColorGray span { color: #808080; }
+#mumbleViewer.mumbleViewerColorGreen a, #mumbleViewer.mumbleViewerColorGreen a:visited, #mumbleViewer.mumbleViewerColorGreen span { color: #008000; }
+#mumbleViewer.mumbleViewerColorLime a, #mumbleViewer.mumbleViewerColorLime a:visited, #mumbleViewer.mumbleViewerColorLime span { color: #0f0; }
+#mumbleViewer.mumbleViewerColorMaroon a, #mumbleViewer.mumbleViewerColorMaroon a:visited, #mumbleViewer.mumbleViewerColorMaroon span { color: #800000; }
+#mumbleViewer.mumbleViewerColorNavy a, #mumbleViewer.mumbleViewerColorNavy a:visited, #mumbleViewer.mumbleViewerColorNavy span { color: #000080; }
+#mumbleViewer.mumbleViewerColorOlive a, #mumbleViewer.mumbleViewerColorOlive a:visited, #mumbleViewer.mumbleViewerColorOlive span { color: #808000; }
+#mumbleViewer.mumbleViewerColorPurple a, #mumbleViewer.mumbleViewerColorPurple a:visited, #mumbleViewer.mumbleViewerColorPurple span { color: #800080; }
+#mumbleViewer.mumbleViewerColorRed a, #mumbleViewer.mumbleViewerColorRed a:visited, #mumbleViewer.mumbleViewerColorRed span { color: #f00; }
+#mumbleViewer.mumbleViewerColorSilver a, #mumbleViewer.mumbleViewerColorSilver a:visited, #mumbleViewer.mumbleViewerColorSilver span { color: #c0c0c0; }
+#mumbleViewer.mumbleViewerColorTeal a, #mumbleViewer.mumbleViewerColorTeal a:visited, #mumbleViewer.mumbleViewerColorTeal span { color: #008080; }
+#mumbleViewer.mumbleViewerColorWhite a, #mumbleViewer.mumbleViewerColorWhite a:visited, #mumbleViewer.mumbleViewerColorWhite span { color: #fff; }
+#mumbleViewer.mumbleViewerColorYellow a, #mumbleViewer.mumbleViewerColorYellow a:visited, #mumbleViewer.mumbleViewerColorYellow span { color: #ff0; }

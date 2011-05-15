@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Mumble Channel Viewer Demo</title>
+	
+	<!-- Begin Mumble Channel Viewer block -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>		<!-- This line includes the jQuery library. If you are already using the jQuery library on your page you do not need to include this line -->
+	<script type="text/javascript" src="mumbleViewer.js"></script>		<!-- This line loads the main JavaScript library, and should always be included. -->
+	<link rel="stylesheet" type="text/css" href="mumbleChannelViewer.css" />		<!-- This line loads the CSS for the Mumble viweer, and should always be included. -->
+	<script type="text/javascript">
+		var mumbleChannelViewerJsonUri = "http://10.0.0.1/json?callback=?";	/* set this to your JSON URL, being sure to include the "callback" argument. */
+	</script>
+	<!-- End Mumble Channel Viewer block -->
+	
+	<style type="text/css">
+		body { font: 0.8em Georgia; }
+		#icons { margin: 0; padding: 0; list-style-type: none; }
+		#icons li { display: inline; float: left; text-align: center; margin: 10px; border: 1px solid #c0c0c0; padding: 0.5em; width: 329px; }
+		#icons li:hover { background-color: #f6f6f6; }
+		#wrapper { width: 960px; margin: 0 auto; }
+		#contentRegion { width: 740px; float: left; }
+		#sideBar { margin-left: 750px; }
+		
+		.example { width: 60%; border: 1px solid #2f40c1; margin: 10px; padding: 3px 15px; background-color: #e3e6fe; }
+		.example h4 { margin: 0; padding: 0; }
+		.example .url { display: block; margin: 0 0 10px 100px; font-weight: bold; }
+		.highlight { background-color: yellow; }
+		h3 { clear: both; }
+		a, a:visited { color: #4d72db; text-decoration: none; }
+		a:hover { color: #bb1a00; }
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="contentRegion">
+			<h1>Mumble Channel Viewer (JavaScript) Demo</h1>
+			<p>This is the demo page for the Mumble Channel Viewer (MCV). MCV uses the jQuery library and the JSONP protocol. You will need the JSONP URL for your Mumble server.</p>
+			
+			<p>The URL you enter into the <strong>mumbleChannelViewerJsonUri</strong> variable <em>must</em> include the callback argument in the query string. Here are some examples:</p>
+			<div class="example">
+				<h4>Example One</h4>
+				<p>Your JSON URL is: <span class="url">http://10.0.0.1/json</span>
+				The URL you enter should be: <span class="url">http://10.0.0.1/json<span class="highlight">?callback=?</span></span></p>
+			</div>
+			<div class="example">
+				<h4>Example Two</h4>
+				<p>Your JSON URL is: <span class="url">http://10.0.0.1/json?accountId=1</span>
+				The URL you enter should be: <span class="url">http://10.0.0.1/json?accountId=1<span class="highlight">&amp;callback=?</span></span></p>
+			</div>
+			
+			<h2>How to Use</h2>
+			<p>To use the viewer, copy everything between the &quot;Mumble Channel Viewer block&quot; HTML comments to your page.</p>
+			
+			<h2>Icon and Color Values</h2>
+			<p>The icons and colors used for the viewer can be manipulated by changing the <em>class</em> attribute on the <em>mumbleViewer</em> <strong>div</strong> element. Possible options are listed below:</p>
+			
+			<h3>Icon Sets</h3>
+			<ul id="icons">
+				<li>Default: <strong>mumbleViewerIconsDefault</strong><br />
+					<img src="images/mumbleViewerIcons.png" />
+				</li>
+				<li><a href="http://mumble-tower.de/downloads/mumble-skin/far-cry-2-skin">Far Cry 2</a>: <strong>mumbleViewerIconsFarCry2</strong><br />
+					<img src="images/mumbleViewerIconsFarCry2.png" />
+				</li>
+				<li><a href="http://mumble-tower.de/downloads/mumble-skin/nextgen-mumble-skin">NextGen</a>: <strong>mumbleViewerIconsNextGen</strong><br />
+					<img src="images/mumbleViewerIconsNextGen.png" />
+				</li>
+				<li><a href="http://mumble-tower.de/downloads/mumble-skin/sc-germania-firon">SC Germania</a>: <strong>mumbleViewerIconsSCGermania</strong><br />
+					<img src="images/mumbleViewerIconsSCGermania.png" />
+				</li>
+			</ul>
+			
+			<h3>Color Values</h3>
+			<ul>
+				<li style="color: Aqua;">mumbleViewerColorAqua</li>
+				<li>mumbleViewerColorBlack</li>
+				<li style="color: Blue;">mumbleViewerColorBlue</li>
+				<li style="color: Fuchsia;">mumbleViewerColorFuchsia</li>
+				<li style="color: Gray;">mumbleViewerColorGray</li>
+				<li style="color: Green;">mumbleViewerColorGreen</li>
+				<li style="color: Lime;">mumbleViewerColorLime</li>
+				<li style="color: Maroon;">mumbleViewerColorMaroon</li>
+				<li style="color: Navy;">mumbleViewerColorNavy</li>
+				<li style="color: Olive;">mumbleViewerColorOlive</li>
+				<li style="color: Purple;">mumbleViewerColorPurple</li>
+				<li style="color: Red;">mumbleViewerColorRed</li>
+				<li style="color: Silver;">mumbleViewerColorSilver</li>
+				<li style="color: Teal;">mumbleViewerColorTeal</li>
+				<li>mumbleViewerColorWhite</li>
+				<li style="color: Yellow;">mumbleViewerColorYellow</li>
+			</ul>
+		</div>
+		
+		<div id="sideBar">
+			
+			<!-- Begin Mumble Channel Viewer block -->
+			<div id="mumbleViewer" class="mumbleViewerIconsNextGen mumbleViewerColorNavy">
+				<noscript><p style="text-align: center; color: #f00;">JavaScript is required to use the Mumble Channel Viewer.</noscript>
+				<div id="mumbleTree"></div>
+				<div id="mumbleLoading">
+					<span style="background: url('images/loading.gif') no-repeat; padding-left: 20px;">Loading...</span>
+				</div>
+			</div>
+			<!-- End Mumble Channel Viewer block -->
+		
+		</div>
+	</div>
+</body>
+</html>

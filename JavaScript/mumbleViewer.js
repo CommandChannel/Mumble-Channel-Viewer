@@ -87,27 +87,27 @@ function renderUser(user) {
 	var html = "";
 	html = html + "<li>";
 	if (user.userid > 0)
-		html = html + "<span class='userStatus authenticated'>Authenticated</span>";
+		html = html + "<span class='mumbleChannelViewer-authenticated mumbleChannelViewer-statusIcon'>Authenticated</span>";
 	
 	if (user.suppress)
-		html = html + "<span class='userStatus suppressed'>Suppressed</span>";
+		html = html + "<span class='mumbleChannelViewer-suppressed mumbleChannelViewer-statusIcon'>Suppressed</span>";
 	
 	if (user.selfDeaf)
-		html = html + "<span class='userStatus selfDeaf'>Self-Deafened</span>";
+		html = html + "<span class='mumbleChannelViewer-selfDeafened mumbleChannelViewer-statusIcon'>Self-Deafened</span>";
 	
 	if (user.deaf)
-		html = html + "<span class='userStatus serverDeaf'>Server-Deafened</span>";
+		html = html + "<span class='mumbleChannelViewer-deafened mumbleChannelViewer-statusIcon'>Server-Deafened</span>";
 	
 	if (user.selfMute)
-		html = html + "<span class='userStatus selfMute'>Self-Muted</span>";
+		html = html + "<span class='mumbleChannelViewer-selfMuted mumbleChannelViewer-statusIcon'>Self-Muted</span>";
 	
 	if (user.mute)
-		html = html + "<span class='userStatus serverMute'>Server-Muted</span>";
+		html = html + "<span class='mumbleChannelViewer-muted mumbleChannelViewer-statusIcon'>Server-Muted</span>";
 	
 	if (user.idlesecs < 30 || user.suppress || user.selfMute || user.mute )
-		html = html + "<span class='mumbleUser'>" + user.name + "</span>";
+		html = html + "<span class='mumbleChannelViewer-user'>" + user.name + "</span>";
 	else
-		html = html + "<span class='mumbleUser speaking'>" + user.name + "</span>";
+		html = html + "<span class='mumbleChannelViewer-user'>" + user.name + "</span>";		// TODO: add speaking icon
 	html = html + "</li>";
 	
 	return html;

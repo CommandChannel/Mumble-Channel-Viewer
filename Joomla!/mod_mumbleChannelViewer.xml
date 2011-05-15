@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Mumble Channel Viewer</name>
+	<author>Doug Gilbert, Mike Johnson</author>
+	<creationDate>2011-03-13</creationDate>
+	<copyright>(c) 2011 Command Channel Corporation</copyright>
+	<license>GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>mikej@commandchannel.com</authorEmail>
+	<authorUrl>http://commandchannel.com</authorUrl>
+	<releaseDate>2011-05-15</releaseDate>
+	<releaseType>Minor update</releaseType>
+	<version>2.1.0</version>
+	<description>Displays your Mumble server's channels and connected users using the Channel Viewer Protocol.</description>
+	<files>
+		<filename module="mod_mumbleChannelViewer">mod_mumbleChannelViewer.php</filename>
+		<filename>mod_mumbleChannelViewer.css</filename>
+		<filename>mumbleChannelViewer.php</filename>
+		<filename>index.html</filename>
+		<folder>images/</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="dataFormat" type="radio" default="0" label="Data format">
+					<option value="0">JSON</option>
+					<option value="1">XML</option>
+				</field>
+				<field name="dataUrl" type="text" default="" size="70" label="URL" description="The CVP URL that will return information about your Mumble server." />
+				<field name="iconStyle" type="list" default="0" label="Icon style">
+					<option value="mumbleViewerIconsDefault">Default</option>
+					<option value="mumbleViewerIconsFarCry2">Far Cry 2</option>
+					<option value="mumbleViewerIconsNextGen">NextGen</option>
+					<option value="mumbleViewerIconsSCGermania">SC Germania</option>
+				</field>
+				<field name="fontColor" type="list" default="1" label="Font color">
+					<option value="mumbleViewerColorAqua">Aqua</option>
+					<option value="mumbleViewerColorBlack">Black</option>
+					<option value="mumbleViewerColorBlue">Blue</option>
+					<option value="mumbleViewerColorFuchsia">Fuchsia</option>
+					<option value="mumbleViewerColorGray">Gray</option>
+					<option value="mumbleViewerColorGreen">Green</option>
+					<option value="mumbleViewerColorLime">Lime</option>
+					<option value="mumbleViewerColorMaroon">Maroon</option>
+					<option value="mumbleViewerColorNavy">Navy</option>
+					<option value="mumbleViewerColorOlive">Olive</option>
+					<option value="mumbleViewerColorPurple">Purple</option>
+					<option value="mumbleViewerColorRed">Red</option>
+					<option value="mumbleViewerColorSilver">Silver</option>
+					<option value="mumbleViewerColorTeal">Teal</option>
+					<option value="mumbleViewerColorWhite">White</option>
+					<option value="mumbleViewerColorYellow">Yellow</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+  	<params>
+		<param name="dataFormat" type="radio" default="0" label="Data format">
+			<option value="0">JSON</option>
+			<option value="1">XML</option>
+		</param>
+		<param name="dataUrl" type="text" default="" label="URL" description="The URL that will return information about your Mumble server." />
+		<param name="iconStyle" type="list" default="0" label="Icon style">
+			<option value="mumbleViewerIconsDefault">Default</option>
+			<option value="mumbleViewerIconsFarCry2">Far Cry 2</option>
+			<option value="mumbleViewerIconsNextGen">NextGen</option>
+			<option value="mumbleViewerIconsSCGermania">SC Germania</option>
+		</param>
+		<param name="fontColor" type="list" default="1" label="Font color">
+			<option value="mumbleViewerColorAqua">Aqua</option>
+			<option value="mumbleViewerColorBlack">Black</option>
+			<option value="mumbleViewerColorBlue">Blue</option>
+			<option value="mumbleViewerColorFuchsia">Fuchsia</option>
+			<option value="mumbleViewerColorGray">Gray</option>
+			<option value="mumbleViewerColorGreen">Green</option>
+			<option value="mumbleViewerColorLime">Lime</option>
+			<option value="mumbleViewerColorMaroon">Maroon</option>
+			<option value="mumbleViewerColorNavy">Navy</option>
+			<option value="mumbleViewerColorOlive">Olive</option>
+			<option value="mumbleViewerColorPurple">Purple</option>
+			<option value="mumbleViewerColorRed">Red</option>
+			<option value="mumbleViewerColorSilver">Silver</option>
+			<option value="mumbleViewerColorTeal">Teal</option>
+			<option value="mumbleViewerColorWhite">White</option>
+			<option value="mumbleViewerColorYellow">Yellow</option>
+		</param>
+  	</params>
+</install>
+

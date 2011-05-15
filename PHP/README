@@ -1,0 +1,4 @@
+To use the Mumble Viewer, extract of the files onto your web server. Then update the "$dataUrl" value in demo.php. After verifying that demo.php works (and you can see your Mumble server and the people in it), copy the code in between the HTML comments to any PHP page on your web site.
+
+If you want to make changes to the way the viewer looks edit "mumbleChannelViewer.css"
+
