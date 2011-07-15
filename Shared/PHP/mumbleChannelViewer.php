@@ -38,7 +38,7 @@ class MumbleChannelViewer
 			'http' => array(
 				'method'		=> 'GET',
 				'timeout'		=> 10.0,
-				'user_agent'	=> 'Joomla! Mumble Channel Viewer 1.0'
+				'user_agent'	=> 'Command Channel Mumble Viewer 1.0.0'
 			)
 		);
 		$httpContext = stream_context_create($httpOptions);
