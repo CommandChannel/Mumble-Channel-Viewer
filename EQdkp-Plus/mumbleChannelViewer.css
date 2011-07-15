@@ -1,0 +1,21 @@
+#mumbleViewer { padding: 3px; }
+#mumbleViewer a, #mumbleViewer a:visited { text-decoration: none; }
+#mumbleViewer a:hover { text-decoration: underline; }
+#mumbleViewer ul { list-style-type: none; margin: 0; padding: 0; }
+#mumbleViewer ul ul { margin: 0 0 0 7px; padding: 0 0 0 7px; }
+#mumbleViewer li { padding-top: 3px; }
+#mumbleViewer a, #mumbleViewer span { background: url('images/mumbleViewerIcons.png') no-repeat left -32px; padding-left: 20px; display: block; height: 16px; overflow: hidden; line-height: 14px; }
+#mumbleViewer span.mumbleChannelViewer-statusIcon { text-indent: -9999px; float: right; }
+#mumbleViewer span.mumbleChannelViewer-user { text-indent: 0; background-position: 0 -16px; float: none; }
+#mumbleViewer span.mumbleChannelViewer-authenticated { background-position: 0 0; }
+#mumbleViewer span.mumbleChannelViewer-suppressed { background-position: 0 -96px; }
+#mumbleViewer span.mumbleChannelViewer-selfDeafened { background-position: 0 -48px; }
+#mumbleViewer span.mumbleChannelViewer-deafened { background-position: 0 -64px; }
+#mumbleViewer span.mumbleChannelViewer-selfMuted { background-position: 0 -80px; }
+#mumbleViewer span.mumbleChannelViewer-muted { background-position: 0 -112px;}
+.mumbleChannelViewer-error { background: #ffc url("images/exclamation.png") no-repeat 4px 5px; color: #000; border: 1px solid #f90; margin: 20px 10px; padding: 5px 5px 5px 25px; }
+
+/* Icon styles */
+#mumbleViewer.mumbleViewerIconsFarCry2 a, #mumbleViewer.mumbleViewerIconsFarCry2 span { background-image: url('images/mumbleViewerIconsFarCry2.png'); }
+#mumbleViewer.mumbleViewerIconsNextGen a, #mumbleViewer.mumbleViewerIconsNextGen span { background-image: url('images/mumbleViewerIconsNextGen.png'); }
+#mumbleViewer.mumbleViewerIconsSCGermania a, #mumbleViewer.mumbleViewerIconsSCGermania span { background-image: url('images/mumbleViewerIconsSCGermania.png'); }
